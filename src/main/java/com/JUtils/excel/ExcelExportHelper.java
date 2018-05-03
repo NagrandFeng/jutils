@@ -89,15 +89,15 @@ public class ExcelExportHelper {
 	/**
 	 * @param datePatter 
 	 * 					指定时间格式
-	 * @param imageWidth 
+	 * @param imageWidth
 	 * 					指定图片的宽度
 	 * @param imageHeight 
 	 * 					指定图片的高度
 	 */
-	public ExcelExportHelper(String datePatter,int imageWidht,int imageHeight){
+	public ExcelExportHelper(String datePatter,int imageWidth,int imageHeight){
 		this.DATE_PATTERN = datePatter;
 		this.IMAGE_HEIGHT = imageHeight;
-		this.IMAGE_WIDTH = imageWidht;
+		this.IMAGE_WIDTH = imageWidth;
 	}
 	
 	/**
@@ -931,7 +931,7 @@ public class ExcelExportHelper {
 	 * @author chenssy 
 	 * @date 2014年6月17日 下午7:35:52
 	 * @param textValue 
-	 * @param 指定列
+	 * @param i
 	 * @return
 	 * @version 1.0
 	 */
@@ -983,7 +983,7 @@ public class ExcelExportHelper {
 	 * 将生成的Excel打包并保存到指定路径下
 	 * @author chenssy 
 	 * @date 2014年6月19日 下午6:18:09
-	 * @param book 
+	 * @param books
 	 * 			生成的Excel HSSFWorkbook list集合
 	 * @param filePath 
 	 * 			保存路劲
